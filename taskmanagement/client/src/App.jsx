@@ -1,3 +1,7 @@
+
+
+
+
 import {BrowserRouter, Routes,Route} from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./pages/Home";
@@ -5,6 +9,9 @@ import AdminDashBoard from "./admin/AdminDashboard";
 import { ToastContainer } from 'react-toastify';
 import CreateUser from "./admin/CreateUser";
 import AssignTask from "./admin/AssignTask";
+import EmpDashBoard from "../src/pages/EmpDashboard";
+import EmpTask from "./pages/EmpTask";
+import SeeReport from "./admin/SeeReport";
 const App=()=>{
   return(
     <>
@@ -20,9 +27,16 @@ const App=()=>{
           <Route path="admin-dashboard" element={<AdminDashBoard/>}>
             <Route path="create-user" element={<CreateUser/>} />
             <Route path="assign-task" element={<AssignTask/>}/>
+            <Route path="see-report" element={<SeeReport/>}/>
           </Route>     
          </Routes>
- 
+
+        <Routes>
+          <Route path="emp-dashboard" element={<EmpDashBoard/>}>
+             <Route path="emptask" element={<EmpTask/>} />
+          </Route>
+        </Routes>
+
      <ToastContainer autoClose={2000} />
        </BrowserRouter>
 
