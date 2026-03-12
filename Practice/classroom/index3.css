@@ -1,0 +1,22 @@
+h1{
+    text-align: start;
+    text-decoration:underline;
+    text-decoration: blue underline;
+    font-weight: bolder;
+    line-height: 30px;
+
+#one{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: end;
+ }   
+    
+
+}
+#one{
+    text-align: left;
+    line-height: 20px;
+}
+
+a{
+    text-decoration: none;
+}

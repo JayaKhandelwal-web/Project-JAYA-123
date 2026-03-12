@@ -1,0 +1,22 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    color: aliceblue;
+}
+#logo{
+    color: orange;
+    font-size: larger;
+}
+
+a{
+    margin-right: 100px;
+}
+
+#nav{
+    height: 60px;
+    background-color: black;
+}
+button{
+    color: blue;
+    background-color: orange;
+}
