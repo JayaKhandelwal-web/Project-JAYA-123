@@ -45,7 +45,7 @@ for(let i of str){
 console.log(length)
 
 
-*/
+
 
 
 let student={
@@ -57,3 +57,13 @@ for( let key in student){
     console.log("key is",key,"value=",student[key]);
 }
 
+
+
+
+
+*/
+let obj={
+    item:"pen",
+    price:20,
+};
+console.log("the cost of",obj.item,"is",obj.price,"rupees");
