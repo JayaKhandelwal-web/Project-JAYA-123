@@ -25,7 +25,7 @@ export default App
 
 
 
-
+//use ref is used to manipuate ddom
 import React, { useState } from 'react'
 import { useRef } from 'react'
 const App = () => {
@@ -58,18 +58,33 @@ const App = () => {
 export default App */
 
 
-import React from 'react'
+//to improve the propes drillign use use context api 
+//create,provider,consumer
+
+import React, { createContext } from 'react'
 import ChildA from './ChildA'
 
-const App = () => {
-  const name="Jaya"
+// Create Context
+const NameContext = createContext();
+const GenderContext = createContext();
+
+function App() {
+  const name = "Jaya";
+  const gender = "female";
+
   return (
-    
-    <>
-    <ChildA name={name}/> 
-    
-    </>
-  )
+    <NameContext.Provider value={name}>
+      <GenderContext.Provider value={gender}>
+        <ChildA />
+      </GenderContext.Provider>
+    </NameContext.Provider>
+  );
 }
 
-export default App
+export default App;
+
+// Named export (IMPORTANT)
+export { NameContext, GenderContext };
+
+
+
