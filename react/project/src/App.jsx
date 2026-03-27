@@ -55,7 +55,7 @@ const App = () => {
   )
 }
 
-export default App */
+export default App 
 
 
 //to improve the propes drillign use use context api 
@@ -85,6 +85,66 @@ export default App;
 
 // Named export (IMPORTANT)
 export { NameContext, GenderContext };
+
+
+//usememo problem 
+import React, { useState } from 'react'
+import './App.css'
+const App = () => {
+  const [add,setAdd]=useState(0);
+  const [sub,setSub]=useState(100);
+function multiply(){
+  console.log("this is console")
+  return add*10;
+}
+  return (
+    <>
+      <div className='App'>
+        <h1>learning useMemo</h1>
+        {multiply()} <br />
+        <button onClick={()=>setAdd(add+1)}>Addition</button>
+         <span>{add}</span>  <br />
+        <button onClick={()=>setSub(sub-1)}>Substract</button>
+        <span>{sub}</span>
+      </div>
+    </>
+  )
+}
+export default App  
+
+
+//useMemo to overcome problem unneccsary function  call , performance decrease
+
+import React, { useMemo, useState } from 'react'
+import './App.css'
+const App = () => {
+  const [add,setAdd]=useState(0);
+  const [sub,setSub]=useState(100);
+
+  const multiply =useMemo(function multiply(){
+    console.log("*************");
+    return add*10;
+  },[add])
+  return (
+    <>
+      <div className='App'>
+        <h1>learning useMemo</h1>
+        {multiply} <br />
+        <button onClick={()=>setAdd(add+1)}>Addition</button>
+         <span>{add}</span>  <br />
+        <button onClick={()=>setSub(sub-1)}>Substract</button>
+        <span>{sub}</span>
+      </div>
+    </>
+  )
+}
+export default App  */
+
+
+
+
+
+
 
 
 
