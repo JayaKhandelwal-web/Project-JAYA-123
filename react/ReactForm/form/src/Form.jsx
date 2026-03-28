@@ -2,18 +2,27 @@ import React from 'react'
 import  './Form.css'
 
 const Form = () => {
+  const [data,setData]=use
   return (
-   <>  <h1>Registration</h1>
-   <div className='container'>
   
-    <form id='form'>
-        <input type="text" id='fname' placeholder='Enter Name'/> <br />
- <input type="text"  id='lname' placeholder='Enter Name'/>  <br />
-  <input type="text"  id='email' placeholder='Enter Name'/> <br />
-    </form>
-   </div>
+  
    
-   </>
+  
+
+
+    
+    <div class="container">
+    <h2>Registration Form</h2>
+    <form>
+        <input type="text" placeholder="Full Name"/>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <input type="password" placeholder="Confirm Password" />
+        <button type="submit">Register</button>
+    </form>
+</div>
+   
+   
   )
 }
 

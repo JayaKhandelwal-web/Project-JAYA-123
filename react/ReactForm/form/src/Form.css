@@ -1,49 +1,47 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    
+body {
+    font-family: Arial;
+    background-color: #476981;
 }
 
-
-.container{
-    height: 400px;
+/* Center container */
+.container {
     width: 300px;
-    background-color: gray;
+    margin: 100px auto;   /* center horizontally + space from top */
+    padding: 10px;
     
-      border-radius: 10px;
-      margin-top: 30px;
-     
-      
-
-
-}
-#fname{
-    height: 20px;
-    width: 200px;
-    background-color: pink;
+    
     color: black;
-    font-size:medium;
+    border: 1px solid #ccc;
     border-radius: 10px;
+    height: 400px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Input styling */
+input {
+    width: 80%;
+    padding: 8px;
+   margin-top: 20px;
+    height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Button styling */
+button {
+    width: 85%;
+    padding: 8px;
     margin-top: 30px;
-
+    background-color: rgba(0, 0, 255, 0.527);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height: 38px;
 }
-#lname{
-    height: 20px;
-    width: 200px;
-    background-color: pink;
-    color: black;
-    font-size:medium;
-    border-radius: 10px;
-      margin-top: 30px;
 
-}
-#email{
-    height: 20px;
-    width: 200px;
-    background-color: pink;
-    color: black;
-    font-size:medium;
-    border-radius: 10px;
-      margin-top: 30px;
-
+button:hover {
+    background-color: darkblue;
 }

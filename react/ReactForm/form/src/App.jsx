@@ -38,7 +38,7 @@ function App  ()  {
     </>
   )
 }
-export default App*/
+export default App
 
 
 //registration form using react
@@ -54,4 +54,23 @@ const App = () => {
   )
 }
 
+export default App*/
+
+import React from 'react'
+
+const App = () => {
+  const IPL=["MI", "RCB" ,"CSK"]//list of element,key: keys help to identify item have chnged,added or removed
+  return (
+    <div>
+      
+      {IPL.map((xyz)=><h1 key={xyz}>{xyz}</h1>)}
+    
+    
+    </div>
+  );
+}
+    
+    
+ 
+    
 export default App
