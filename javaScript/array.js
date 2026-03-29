@@ -3,7 +3,7 @@
 //console.log(marks)
 
 
-let cites=["delhi","bhopal","ujjaim","indore"];
+let cites=["delhi","bhopal","ujjain","indore"];
 for(let city of cites){
     console.log(city.toUpperCase());
 }
