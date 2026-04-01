@@ -20,6 +20,23 @@ const AxiosPost = () => {
         })
 
         }
+
+        const handleUpdate=(e)=>{
+            e.preventDefault(); //reload na ho page
+             axios.put("https://jsonplaceholder.typicode.com/users/1",inputData)
+        .then((res)=>{
+            console.log(res)
+        })
+        }
+
+         const handleDel=(e)=>{
+            e.preventDefault();
+              axios.delete("https://jsonplaceholder.typicode.com/users/1")
+        .then((res)=>{
+            console.log(res)
+        })
+        
+         }
      return (
    <>
 
@@ -37,6 +54,9 @@ placeholder='enter last name'></input>
 <button onClick={handleSubmit}>
     submit
 </button>
+<button onClick={handleUpdate}> update</button>
+   <button onClick={handleDel}> Delete</button>
+   
    </>
 
   )
