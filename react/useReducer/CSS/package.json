@@ -1,0 +1,18 @@
+{
+  "name": "css",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
